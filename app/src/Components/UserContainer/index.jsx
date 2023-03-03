@@ -14,6 +14,10 @@ export default function UserContainer() {
     {id: 10, firstname: 'Meryl', lastname: 'Streep', age: 73}
   ]
   return (
-    <div>UserContainer</div>
+    <div>
+      {
+        Users.map(User => <Users key={User.id} {...User} />)
+      }
+    </div>
   )
 }
