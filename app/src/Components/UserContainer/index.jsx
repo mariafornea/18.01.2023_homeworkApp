@@ -1,7 +1,7 @@
 import React from 'react'
 import Users from '../Users'
 export default function UserContainer() {
-  const Users = [
+  const Actors = [
     {id: 1, firstname: 'Anthony', lastname: 'Mackie', age: 44},
     {id: 2, firstname: 'Helena Bonham', lastname: 'Carter', age: 56},
     {id: 3, firstname: 'Millie Bobby', lastname: 'Brown', age: 19},
@@ -16,7 +16,7 @@ export default function UserContainer() {
   return (
     <div>
       {
-        Users.map(User => <Users key={User.id} {...User} />)
+        Actors.map(Actor => <Users key={Actor.id} {...Actor} />)
       }
     </div>
   )

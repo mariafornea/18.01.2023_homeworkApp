@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Users(firstname, lastname, age) {
+export default function Users(id, firstname, lastname, age) {
   return (
     <div>
       <p>{firstname}</p>
