@@ -1,7 +1,7 @@
 import React from 'react'
-import Users from '../Users'
+import User from '../User'
 export default function UserContainer() {
-  const Actors = [
+  const users = [
     {id: 1, firstname: 'Anthony', lastname: 'Mackie', age: 44},
     {id: 2, firstname: 'Helena Bonham', lastname: 'Carter', age: 56},
     {id: 3, firstname: 'Millie Bobby', lastname: 'Brown', age: 19},
@@ -13,10 +13,11 @@ export default function UserContainer() {
     {id: 9, firstname: 'Kurt', lastname: 'Russell', age: 71},
     {id: 10, firstname: 'Meryl', lastname: 'Streep', age: 73}
   ]
+
   return (
     <div>
       {
-        Actors.map(Actor => <Users key={Actor.id} {...Actor} />)
+        users.map(user => <User key={user.id} {...user} />)
       }
     </div>
   )
